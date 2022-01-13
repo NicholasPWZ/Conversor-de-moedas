@@ -24,8 +24,16 @@ export default {
     Header,
     Card,
     Form
-  }
-}
+  },
+  data: function(){
+
+  },
+  methods:{
+    converter : function(){
+      this.valorConvertido = (this.ask * this.numeroAConverter).toFixed(2).replace(".",",");
+    }
+  },
+};
 </script>
 
 <style>
